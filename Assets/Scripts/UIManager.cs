@@ -6,25 +6,36 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI LevelText;
+    public TextMeshProUGUI PointsText;
+    int LevelCount = 1;
+    int PointCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         // Set the initial level text
-        SetLevelText(1);
+        SetLevelText(LevelCount);
+        SetPointText(PointCount);
     }
 
     // Method to set the level text
     void SetLevelText(int level)
     {
-        LevelText.text = "Level " + level.ToString();
+        LevelText.text = "Level " + LevelCount.ToString();
     }
 
-    // Example of how to call the method when you want to change the level
-    void ExampleLevelChange()
+    void SetPointText(int level)
     {
-        // Change the level to 2 (or any other level)
-        int newLevel = 2;
-        SetLevelText(newLevel);
+        PointsText.text = "Points " + PointCount.ToString() + " ! ";
+    }
+
+    public void IncreaseLevel()
+    {
+
+    }
+    public void IncreasePoints()
+    {
+        PointCount++;
+        PointsText.text = "Points " + PointCount.ToString() + " ! ";
     }
 }
