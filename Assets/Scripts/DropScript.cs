@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DropScript : MonoBehaviour
 {
-    public float fallSpeed = 5f; // Adjust this value to set the falling speed
+    public float fallSpeed; // Adjust this value to set the falling speed
     private UIManager UIManager;
 
     private void Start()

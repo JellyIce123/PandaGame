@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level Picker.unity
+    guid: 4afc0c7c5248fae47a4dc71046fd10de
+  - enabled: 1
+    path: Assets/Scenes/WinningScene.unity
+    guid: 8713649ab3e702f41b093f27ea1bcdf7
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: a7f2385ff46b91046a7b944a580037f9
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 0c7a0d0619b7986499598e431481834b
   m_configObjects: {}

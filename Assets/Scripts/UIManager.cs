@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI LevelText;
     public TextMeshProUGUI PointsText;
+
     int LevelCount = 1;
     int PointCount = 0;
 
@@ -29,13 +31,19 @@ public class UIManager : MonoBehaviour
         PointsText.text = "Points " + PointCount.ToString() + " ! ";
     }
 
-    public void IncreaseLevel()
-    {
-
-    }
     public void IncreasePoints()
     {
         PointCount++;
         PointsText.text = "Points " + PointCount.ToString() + " ! ";
+    }
+
+    public void SceneSwitcher()
+    {
+        SceneManager.LoadScene("DeathScene");
+    }
+
+    public void WinningSwitcher()
+    {
+        SceneManager.LoadScene("WinningScene");
     }
 }
